@@ -17,7 +17,7 @@ export default class App extends React.Component {
   };
 
   handleKeypress = key => {
-    this.setState(calculate(this.state, buttonFromKey(key.key)));
+    this.handleClick(buttonFromKey(key.key));
   };
 
   render() {
